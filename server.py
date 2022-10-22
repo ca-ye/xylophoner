@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 # the pi ip is 192.168.0.28, the computer ip is the same but instead of 26 at the end its 152
 
-hostName = "192.168.0.193"
+hostName = "192.168.0.152"
 serverPort = 8080
 
 
