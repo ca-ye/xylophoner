@@ -2,7 +2,7 @@
 
 ## SolidWorks File Updates
 
-1. Motor housings V1 ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png)
+1. Motor housings V1 ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png)
 
 2. corner bracket for base ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png)
 
