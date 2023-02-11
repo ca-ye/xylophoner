@@ -6,5 +6,7 @@
     -  Steppers
 
 - ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `fine tuning/levelling motor housing`
+- ![#c5f015](https://placehold.co/15x15/f03c15/f03c15.png) `corner bracket for base`
 
 ##  STL FIle Updates
+
