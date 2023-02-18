@@ -37,3 +37,10 @@ This concludes section 2.
 If the pi will not boot there are a few steps you must follow. If you have a display output then please ignore the following section. If you have no display output check the green ACT light. If the light is solid on it may be a problem with the Raspberry PI board itself and may need to be removed for repairs or replacement. Before removing the board ensure that the power to the rover and Raspberry PI is off then UNPLUG all USB cables from the front of the device. Ensure that the USB sd card reader is still inserted in one of the BLUE usb ports (symbolising a USB 3.0 port). Then attempt powering the from the onboard USB C port. If the symptoms have not changed please UNPLUG all external connections to the Raspberry Pi and remove from the body of the rover.
 
 (Continuation pending) (Presumed next revision in V2.0 softwareS)
+
+
+## Section 4
+## Xylophener code/programming
+
+In server.py is the part of the code which is what runs the website as we located a ServerPort in which we will use as our ip for the website as in the website you can choose which song you want it to play and it will.
+In Gui.py
