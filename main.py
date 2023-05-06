@@ -15,7 +15,7 @@ servo_4 = Servo(19, pin_factory=factory)  # left angle
 
 servo_1.value = 0
 servo_2.value = 0
-servo_3.value = 0
+servo_3.value = -0.7
 servo_4.value = 0
 
 keys = {
@@ -26,8 +26,10 @@ keys = {
     "G": 5,
     "A": 6,
     "B": 7,
-    "C\'": 8
+    "C\'": 8,
+    "-": 9
 }
+
 
 def turn_on_servos(event):
     if event == '1':
@@ -63,43 +65,45 @@ def turn_on_servos(event):
         sleep(0.5)
 
     elif event == '5':
-        servo_2.value = 0.1
-        sleep(0.5)
-        servo_3.value = 0.7
+        servo_2.value = 0.86
         sleep(0.5)
         servo_3.value = 0
+        sleep(0.5)
+        servo_3.value = -0.7
         sleep(0.5)
 
     elif event == '6':
-        servo_2.value = -0.1
-        sleep(0.5)
-        servo_3.value = 0.7
+        servo_2.value = 0.66
         sleep(0.5)
         servo_3.value = 0
+        sleep(0.5)
+        servo_3.value = -0.7
         sleep(0.5)
 
     elif event == '7':
-        servo_2.value = -0.25
+        servo_2.value = 0.46
         sleep(0.7)
-        servo_3.value = 0.7
-        sleep(0.5)
         servo_3.value = 0
+        sleep(0.5)
+        servo_3.value = -0.7
         sleep(0.5)
 
     elif event == '8':
-        servo_2.value = -0.4
+        servo_2.value = 0.26
         sleep(0.7)
-        servo_3.value = 0.7
-        sleep(0.5)
         servo_3.value = 0
         sleep(0.5)
+        servo_3.value = -0.7
+        sleep(0.5)
+
+    elif event == '9':
+        sleep(1.7)
 
     elif event == 'submit':
         sequence = values['sequence']
         sequence = sequence.split(" ")
         for i in sequence:
             turn_on_servos(str(keys[i]))
-
 
 
 sg.theme('DarkBlue6')  # Add a touch of color
@@ -118,7 +122,7 @@ while True:
     if event == sg.WIN_CLOSED or event == 'Cancel':  # if user closes window or clicks cancel
         servo_1.value = 0
         servo_2.value = 0
-        servo_3.value = 0
+        servo_3.value = -0.7
         servo_4.value = 0
         break
     turn_on_servos(event)
